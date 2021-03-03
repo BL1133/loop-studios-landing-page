@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    transform: translateY(-2px);
+  }
+}
+.navigation-list {
+  display: flex;
+  gap: 2.7rem;
+  align-self: center;
+}
+.navigation-item {
+  font-size: 1.3rem;
+  color: $color-white;
+}

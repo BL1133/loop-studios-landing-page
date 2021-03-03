@@ -10,7 +10,11 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
-
+.heading-primary {
+  font-size: 7rem;
+  color: $color-white;
+}
 .paragraph {
   font-size: $default-font-size;
+  color: $color-very-dark-grey;
 }
