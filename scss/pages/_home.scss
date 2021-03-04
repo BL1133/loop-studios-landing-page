@@ -23,3 +23,13 @@
 }
 
 // Features Section
+.section__features {
+}
+.features__heading {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    transform: translateY(6px);
+  }
+}
