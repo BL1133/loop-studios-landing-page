@@ -1,5 +1,5 @@
 .header-container {
-  height: 60vh;
+  height: 63vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../../images/desktop/image-hero.jpg);
   background-position: center;
@@ -10,7 +10,7 @@
   &__heading {
     display: inline-block;
     border: 2px solid $color-white;
-    padding: 2rem 10rem 2rem 4.4rem;
+    padding: 2.5rem 10rem 2.5rem 4.4rem;
 
     h1 {
       padding-top: 18px; // Fixes stupid font issue that took me an hour and a half to figure out what the problem was

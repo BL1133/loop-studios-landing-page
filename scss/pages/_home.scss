@@ -1,0 +1,25 @@
+// About Section
+.section__about {
+  position: relative;
+}
+.about__img {
+}
+.about__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  height: 60%;
+  background-color: white;
+}
+.about__paragraph {
+  padding-left: 10rem;
+  padding-top: 2.5rem;
+}
+.about__heading {
+  padding-top: 10rem;
+  padding-left: 10rem;
+}
+
+// Features Section

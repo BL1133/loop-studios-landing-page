@@ -58,9 +58,14 @@ body {
   font-size: 7rem;
   color: white; }
 
+.heading-secondary {
+  font-size: 5rem;
+  color: black; }
+
 .paragraph {
   font-size: 1.5rem;
-  color: dimgray; }
+  color: #8c8c8c;
+  line-height: 2.5rem; }
 
 .u-padding-top--big {
   padding-top: 5rem; }
@@ -73,25 +78,16 @@ body {
   margin-left: 14rem; }
 
 .u-margin-top--big {
-  margin-top: 12rem; }
+  margin-top: 16rem; }
 
 .u-margin-bottom--big {
   margin-bottom: 10rem; }
 
 .u-margin-top--medium {
-  margin-top: 3rem; }
-
-.u-margin-bottom--medium {
-  margin-top: 3rem; }
-
-.u-margin-bottom--small {
-  margin-top: 2rem; }
-
-.u-margin-top--small {
-  margin-top: 2rem; }
+  margin-top: 14rem; }
 
 .header-container {
-  height: 60vh;
+  height: 63vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/desktop/image-hero.jpg);
   background-position: center;
   background-size: cover;
@@ -100,7 +96,7 @@ body {
 .header__heading {
   display: inline-block;
   border: 2px solid white;
-  padding: 2rem 10rem 2rem 4.4rem; }
+  padding: 2.5rem 10rem 2.5rem 4.4rem; }
   .header__heading h1 {
     padding-top: 18px; }
 
@@ -118,3 +114,23 @@ body {
 .navigation-item {
   font-size: 1.3rem;
   color: white; }
+
+.section__about {
+  position: relative; }
+
+.about__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  height: 60%;
+  background-color: white; }
+
+.about__paragraph {
+  padding-left: 10rem;
+  padding-top: 2.5rem; }
+
+.about__heading {
+  padding-top: 10rem;
+  padding-left: 10rem; }
