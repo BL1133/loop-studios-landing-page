@@ -65,6 +65,10 @@ body {
   font-size: 5rem;
   color: black; }
 
+.heading-tertiary {
+  font-size: 3.2rem;
+  color: white; }
+
 .paragraph {
   font-size: 1.5rem;
   color: #8c8c8c;
@@ -76,6 +80,9 @@ body {
 
 .u-margin-top--big {
   margin-top: 16rem; }
+
+.u-margin-top--medium {
+  margin-top: 8rem; }
 
 .u-padding-top--small {
   padding-top: 6rem; }
@@ -123,6 +130,59 @@ body {
 .navigation-item {
   font-size: 1.3rem;
   color: white; }
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem; }
+  .grid__item {
+    position: relative;
+    height: 45rem; }
+    .grid__item h3 {
+      position: absolute;
+      bottom: 3rem;
+      left: 3.5rem; }
+
+.item__1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-deep-earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-night-arcade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-soccer-team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-grid.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-from-above.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-pocket-borealis.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-curiosity.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item__8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../images/desktop/image-fisheye.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .section__about {
   position: relative; }

@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+
+  &__item {
+    position: relative;
+    height: 45rem;
+
+    h3 {
+      position: absolute;
+      bottom: 3rem;
+      left: 3.5rem;
+    }
+  }
+}
+.item {
+  &__1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-night-arcade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-soccer-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-grid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-from-above.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-curiosity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url(../../images/desktop/image-fisheye.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
