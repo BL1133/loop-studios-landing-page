@@ -13,6 +13,14 @@
       bottom: 3rem;
       left: 3.5rem;
     }
+    @include respond(tab-land) {
+      height: 60rem;
+    }
+  }
+  @include respond(tab-land) {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
   }
 }
 .item {

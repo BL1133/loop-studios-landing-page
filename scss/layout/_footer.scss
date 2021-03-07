@@ -1,0 +1,38 @@
+.footer-container {
+  background-color: $color-black;
+  height: 16rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+
+  &__social {
+    .social {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: flex-end;
+      transform: scale(1.1);
+      transform-origin: 100%;
+
+      .twitter {
+        transform: translateY(3px);
+      }
+    }
+    .copyright {
+      color: $color-dark-grey;
+      margin-top: 3rem;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__nav {
+    img {
+      transform: scale(0.8);
+      transform-origin: 0;
+    }
+    ul {
+      margin-top: 2rem;
+    }
+  }
+}
