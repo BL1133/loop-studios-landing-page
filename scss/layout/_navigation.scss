@@ -4,6 +4,11 @@
 
   &__logo {
     transform: translateY(-2px);
+
+    @include respond(phone) {
+      transform: scale(0.75);
+      transform-origin: 0;
+    }
   }
 }
 .navigation-list {

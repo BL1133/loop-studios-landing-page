@@ -8,12 +8,16 @@
     margin-left: 9rem;
   }
   @include respond(phone) {
-    margin-right: 4.5rem;
-    margin-left: 4.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 }
 .u-margin-top--big {
   margin-top: 16.5rem;
+
+  @include respond(phone) {
+    margin-top: 12rem;
+  }
 }
 // MEDIUM
 .u-margin-top--medium {

@@ -15,7 +15,7 @@ body {
   color: $color-white;
 
   @include respond(phone) {
-    font-size: 7.5rem;
+    font-size: 5rem;
     word-spacing: 1000rem; //each word breaks a line
   }
 }

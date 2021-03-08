@@ -8,7 +8,7 @@
   object-fit: cover;
 
   @include respond(phone) {
-    height: 103vh;
+    height: 100vh;
   }
 }
 .header {
@@ -26,7 +26,7 @@
       width: 100%;
       padding-right: 4.5rem;
       margin-top: initial;
-      border: 3px solid $color-white;
+      padding: 1rem 0 1rem 3rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -36,5 +36,6 @@
   @include respond(phone) {
     height: 100%;
     position: relative;
+    padding-top: 4.5rem;
   }
 }
