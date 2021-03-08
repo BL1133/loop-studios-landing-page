@@ -10,6 +10,15 @@
   display: flex;
   gap: 2.7rem;
   align-self: center;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 665px) {
+  .navigation-list {
+    gap: 1.5rem;
+  }
 }
 .navigation-item {
   font-size: 1.4rem;

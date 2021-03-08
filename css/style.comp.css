@@ -58,8 +58,12 @@ body {
   text-transform: uppercase; }
 
 .heading-primary {
-  font-size: 7rem;
+  font-size: 8rem;
   color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 7.5rem;
+      word-spacing: 1000rem; } }
 
 .heading-secondary {
   font-size: 5rem;
@@ -79,8 +83,12 @@ body {
   margin-left: 16rem; }
   @media only screen and (max-width: 75em) {
     .u-margin-right-left--big {
-      margin-right: 10rem;
-      margin-left: 10rem; } }
+      margin-right: 9rem;
+      margin-left: 9rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-right-left--big {
+      margin-right: 4.5rem;
+      margin-left: 4.5rem; } }
 
 .u-margin-top--big {
   margin-top: 16.5rem; }
@@ -112,6 +120,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .header-container {
+      height: 103vh; } }
 
 .header__heading {
   display: inline-block;
@@ -120,6 +131,21 @@ body {
   margin-top: 12rem; }
   .header__heading h1 {
     padding-top: 18px; }
+  @media only screen and (max-width: 37.5em) {
+    .header__heading {
+      width: 100%;
+      padding-right: 4.5rem;
+      margin-top: initial;
+      border: 3px solid white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+
+@media only screen and (max-width: 37.5em) {
+  .header {
+    height: 100%;
+    position: relative; } }
 
 .footer-container {
   background-color: black;
@@ -139,8 +165,11 @@ body {
       transform: translateY(3px); }
   .footer__social .copyright {
     color: #8c8c8c;
-    margin-top: 3rem;
+    margin-top: 3.4rem;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 665px) {
+      .footer__social .copyright {
+        font-size: 1.2rem; } }
   .footer__nav img {
     transform: scale(0.8);
     transform-origin: 0; }
@@ -157,6 +186,13 @@ body {
   display: flex;
   gap: 2.7rem;
   align-self: center; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation-list {
+      display: none; } }
+
+@media only screen and (min-width: 601px) and (max-width: 665px) {
+  .navigation-list {
+    gap: 1.5rem; } }
 
 .navigation-item {
   font-size: 1.4rem;

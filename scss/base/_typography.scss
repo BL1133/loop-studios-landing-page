@@ -11,8 +11,13 @@ body {
   text-transform: uppercase;
 }
 .heading-primary {
-  font-size: 7rem;
+  font-size: 8rem;
   color: $color-white;
+
+  @include respond(phone) {
+    font-size: 7.5rem;
+    word-spacing: 1000rem; //each word breaks a line
+  }
 }
 .heading-secondary {
   font-size: 5rem;

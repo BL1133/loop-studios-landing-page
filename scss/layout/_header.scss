@@ -6,6 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
+
+  @include respond(phone) {
+    height: 103vh;
+  }
 }
 .header {
   &__heading {
@@ -17,5 +21,20 @@
     h1 {
       padding-top: 18px; // Fixes stupid font issue
     }
+
+    @include respond(phone) {
+      width: 100%;
+      padding-right: 4.5rem;
+      margin-top: initial;
+      border: 3px solid $color-white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @include respond(phone) {
+    height: 100%;
+    position: relative;
   }
 }
