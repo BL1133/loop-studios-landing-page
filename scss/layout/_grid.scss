@@ -16,6 +16,10 @@
     @include respond(tab-land) {
       height: 30rem;
     }
+    @include respond(phone) {
+      height: 14.5rem;
+      margin-bottom: 2.8rem;
+    }
   }
   @include respond(tab-land) {
     grid-template-rows: repeat(4, 1fr);
@@ -31,47 +35,87 @@
       url(../../images/desktop/image-deep-earth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-deep-earth.jpg);
+    }
   }
   &__2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
       url(../../images/desktop/image-night-arcade.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-night-arcade.jpg);
+    }
   }
   &__3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-soccer-team.jpg);
+      url(../../images/mobile/image-soccer-team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-soccer-team.jpg);
+    }
   }
   &__4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-grid.jpg);
+      url(../../images/mobile/image-grid.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-grid.jpg);
+    }
   }
   &__5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-from-above.jpg);
+      url(../../images/mobile/image-from-above.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-from-above.jpg);
+    }
   }
   &__6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-pocket-borealis.jpg);
+      url(../../images/mobile/image-pocket-borealis.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-pocket-borealis.jpg);
+    }
   }
   &__7 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-curiosity.jpg);
+      url(../../images/mobile/image-curiosity.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-curiosity.jpg);
+    }
   }
   &__8 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-      url(../../images/desktop/image-fisheye.jpg);
+      url(../../images/mobile/image-fisheye.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(../../images/mobile/image-fisheye.jpg);
+    }
   }
 }

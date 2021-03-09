@@ -76,11 +76,40 @@
 }
 
 // Features Section
+.section__features {
+  position: relative;
+}
 .features__heading {
   display: flex;
   justify-content: space-between;
 
-  h2 {
+  @include respond(phone) {
+    justify-content: center;
+  }
+
+  .heading-secondary {
     transform: translateY(6px);
+
+    @include respond(phone) {
+      margin-bottom: 6.3rem;
+    }
+  }
+}
+.features__btn--desktop {
+  @include respond(phone) {
+    display: none;
+  }
+}
+.features__btn--mobile {
+  display: hidden;
+  @include respond(phone) {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    letter-spacing: 0.6rem;
+    padding: 1.2rem 4.4rem 1.2rem 4.4rem;
+    margin-top: 1.5rem;
   }
 }
