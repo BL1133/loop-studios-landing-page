@@ -1,6 +1,10 @@
 .footer-container {
   background-color: $color-black;
   height: 14.3rem;
+
+  @include respond(phone) {
+    height: initial;
+  }
 }
 .footer {
   display: flex;
@@ -18,6 +22,12 @@
       .twitter {
         transform: translateY(3px);
       }
+      @include respond(phone) {
+        justify-content: center;
+        transform: initial;
+        transform-origin: initial;
+        margin-top: 6rem;
+      }
     }
     .copyright {
       color: $color-dark-grey;
@@ -27,6 +37,10 @@
       @media only screen and (max-width: 665px) {
         font-size: 1.2rem;
       }
+      @include respond(phone) {
+        text-align: center;
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -34,9 +48,33 @@
     img {
       transform: scale(0.8);
       transform-origin: 0;
+      @include respond(phone) {
+        align-self: center;
+        transform-origin: initial;
+      }
     }
     ul {
       margin-top: 2rem;
     }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__navigation-list {
+    .navigation-item {
+      align-self: center;
+      font-size: 1.8rem;
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @include respond(phone) {
+    flex-direction: column;
+    padding-top: 7rem;
   }
 }

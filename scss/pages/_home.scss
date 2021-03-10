@@ -78,6 +78,10 @@
 // Features Section
 .section__features {
   position: relative;
+
+  @include respond(phone) {
+    margin-bottom: 20rem;
+  }
 }
 .features__heading {
   display: flex;
