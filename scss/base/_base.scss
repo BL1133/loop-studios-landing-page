@@ -37,4 +37,37 @@ ul {
 }
 a {
   text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
+// Active States
+.navigation-item,
+.social-icon {
+  position: relative;
+}
+.navigation-item:hover::after,
+.social-icon:hover::after {
+  content: '';
+  background: $color-white;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 40%;
+}
+.social-icon:hover::after {
+  width: 100%;
+  bottom: -5px;
+}
+.grid__item:hover {
+  .item {
+    filter: opacity(0.4) sepia(1);
+  }
+  h3 {
+    color: $color-black;
+    font-weight: 700;
+  }
 }
