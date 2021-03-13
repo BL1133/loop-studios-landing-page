@@ -105,7 +105,8 @@
   }
 }
 .features__btn--mobile {
-  display: hidden;
+  display: none;
+
   @include respond(phone) {
     display: inline-block;
     position: absolute;
