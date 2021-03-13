@@ -104,6 +104,9 @@ body {
 
 .u-padding-top--small {
   padding-top: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .u-padding-top--small {
+      padding-top: 4.5rem; } }
 
 .btn {
   display: inline;
@@ -151,8 +154,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header {
     height: 100%;
-    position: relative;
-    padding-top: 4.5rem; } }
+    position: relative; } }
 
 .footer-container {
   background-color: black;
@@ -225,10 +227,31 @@ body {
       .navigation__logo {
         transform: scale(0.75);
         transform-origin: 0; } }
+  .navigation--mobile-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000; }
+  .navigation__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    margin-top: 20rem; }
+  .navigation__menu-btn--hamburger, .navigation__menu-btn--close {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__menu-btn--hamburger, .navigation__menu-btn--close {
+        display: initial;
+        align-self: center; } }
+  .navigation__menu-btn--close {
+    transform: translateX(-2px); }
 
 .navigation-list {
   display: flex;
-  gap: 2.7rem;
+  gap: 3rem;
   align-self: center; }
 
 @media only screen and (min-width: 601px) and (max-width: 665px) {
@@ -238,6 +261,11 @@ body {
 .navigation-item {
   font-size: 1.4rem;
   color: white; }
+  .navigation-item--mobile {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-transform: uppercase; }
 
 @media only screen and (max-width: 37.5em) {
   .header__navigation-list {

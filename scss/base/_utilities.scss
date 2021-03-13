@@ -26,4 +26,8 @@
 // SMALL
 .u-padding-top--small {
   padding-top: 6rem;
+
+  @include respond(phone) {
+    padding-top: 4.5rem;
+  }
 }
