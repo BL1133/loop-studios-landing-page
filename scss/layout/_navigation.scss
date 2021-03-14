@@ -31,7 +31,7 @@
     flex-direction: column;
     gap: 4rem;
     position: absolute;
-    top: 35%;
+    top: 33%;
   }
   &__menu-btn {
     &--hamburger,
@@ -60,6 +60,7 @@
 .navigation-item {
   font-size: 1.4rem;
   color: $color-white;
+  transition: all 0.05s;
 
   &--mobile {
     font-size: 3.5vh;
