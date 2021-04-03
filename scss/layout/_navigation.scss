@@ -29,9 +29,12 @@
   &__menu {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     position: absolute;
     top: 33%;
+
+    & *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
   }
   &__menu-btn {
     &--hamburger,
@@ -49,12 +52,25 @@
 }
 .navigation-list {
   display: flex;
-  gap: 3rem;
   align-self: center;
+
+  & *:not(:last-child) {
+    margin-right: 3rem;
+
+    @include respond(phone) {
+      margin-right: initial;
+    }
+  }
+
+  @include respond(phone) {
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 665px) {
-  .navigation-list {
-    gap: 1.5rem;
+  .navigation-list > *:not(:last-child) {
+    margin-right: 1.5rem;
   }
 }
 .navigation-item {

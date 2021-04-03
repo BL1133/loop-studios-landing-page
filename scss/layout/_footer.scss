@@ -15,9 +15,10 @@
   &__social {
     .social {
       display: flex;
-      gap: 1.5rem;
       justify-content: flex-end;
-
+      & *:not(:last-child) {
+        margin-right: 1.5rem;
+      }
       .twitter {
         transform: translateY(3px);
       }
@@ -52,6 +53,7 @@
       @include respond(phone) {
         align-self: center;
         transform-origin: initial;
+        margin-bottom: 2rem;
       }
     }
     ul {
@@ -60,7 +62,6 @@
     @include respond(phone) {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
     }
   }
 
